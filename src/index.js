@@ -4,9 +4,13 @@ import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import "./exercise";
+import { legacy_createStore } from "redux";
+import rootReducer from "./modules";
 const root = ReactDOM.createRoot(document.getElementById("root"));
+const store = legacy_createStore(rootReducer);
+console.log(store.getState());
 root.render(
-  <React.StrictMode>
+  <React.StrictMode store={store}>
     <App />
   </React.StrictMode>
 );

@@ -1,5 +1,3 @@
-import React from "react";
-
 /* 액션 타입 만들기 */
 // Ducks패턴은 접두사를 넣어야함
 // 다른 모듈과 액션 이름 중복 방지
